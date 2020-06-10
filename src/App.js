@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      squares: [0,1,2,3,4,5,6,7,8,9,10,11]
+      squares: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
     }
   }
 
@@ -16,30 +16,38 @@ clickHandler = event => {
 render() {
   return (
     <div className= "ColorS">
-      <div class ClassName= "grid" onClick={this.clickHandler} data="0">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="0">
       {this.state.squares[0]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="1">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="1">
       {this.state.squares[1]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="2">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="2">
       {this.state.squares[2]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="3">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="3">
       {this.state.squares[3]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="4">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="4">
       {this.state.squares[4]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="5">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="5">
       {this.state.squares[5]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="6">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="6">
       {this.state.squares[6]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="7">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="7">
       {this.state.squares[7]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="8">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="8">
       {this.state.squares[8]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="9">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="9">
       {this.state.squares[9]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="10">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="10">
       {this.state.squares[10]}</div>
-      <div class ClassName= "grid" onClick={this.clickHandler} data="11">
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="11">
       {this.state.squares[11]}</div>
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="12">
+      {this.state.squares[12]}</div>
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="13">
+      {this.state.squares[13]}</div>
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="14">
+      {this.state.squares[14]}</div>
+      <div className= "ColorS-grid" onClick={this.clickHandler} data="15">
+      {this.state.squares[15]}</div>
     </div>
       );
   }
