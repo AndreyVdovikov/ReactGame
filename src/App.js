@@ -19,7 +19,7 @@ let currentScuares = this.state.squares;
 console.log(currentScuares);
   //проверка
   if (currentScuares[data] === null){
-  // выбор что добавлять счетчик четный или не четный
+  // выбор что добавлять х или о по состоянию счетчика
   currentScuares[data] = (this.state.count % 2 === 0) ? 'X':'O';
   // увеличение счетчика
   this.setState({ count: this.state.count + 1});
