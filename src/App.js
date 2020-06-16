@@ -5,7 +5,9 @@ class App extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      squares:Array(15).fill(null)
+      squares:Array(15).fill(null),//ЗАПЯТАЯ БЛИН111
+      count: 0 // значение счетчика
+
     }
   }
 
@@ -15,8 +17,18 @@ clickHandler = event => {
 let data = event.target.getAttribute('data');
 let currentScuares = this.state.squares;
 console.log(currentScuares);
-currentScuares [data] = 1;
-this.setState({ scuares:currentScuares});
+  //проверка
+  if (currentScuares[data] === null){
+  // выбор что добавлять счетчик четный или не четный
+  currentScuares[data] = (this.state.count % 2 === 0) ? 'X':'O';
+  // увеличение счетчика
+  this.setState({ count: this.state.count + 1});
+  // текущиц квадратик
+  this.setState({ scuares:currentScuares});
+  }
+  else {
+    alert ('Так нельзя');
+  }
 }
 
 render() {
